@@ -1,2 +1,18 @@
-# FlightStore-JS-Project
-"A dynamic e-commerce web application for booking flights, built with Vanilla JavaScript, HTML5, and CSS3. Features custom Web Components, product filtering, and a functional shopping cart using LocalStorage."
+SkyStore - Flight Booking System 
+פלטפורמה דינמית להזמנת טיסות המבוססת על צד לקוח 
+
+ תכונות עיקריות
+תצוגת מוצרים דינמית: שימוש ב-Custom Elements (product-card) להצגת הטיסות.
+
+סינון מתקדם: אפשרות סינון טיסות לפי יעד בזמן אמת.
+
+סל קניות פונקציונלי: הוספה, הסרה ועדכון כמויות של כרטיסי טיסה.
+
+שמירת נתונים: שימוש ב-localStorage לשמירת פריטי הסל גם לאחר רענון הדף.
+
+ טכנולוגיות
+HTML5 & CSS3: עיצוב רספונסיבי ושימוש ב-Grid.
+
+Vanilla JavaScript: ניהול לוגיקה ללא ספריות חיצוניות.
+
+Web Components: יצירת רכיבים עצמאיים לשימוש חוזר.
