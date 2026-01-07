@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+  
+    <script src="dataModels.js"></script>
+    <script src="allProducts.js" defer></script>
+     <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+    <div class="history-buttons">
+        <button id="back-btn" class="history-btn" title="חזור אחורה">&#8592;</button>
+        <button id="forward-btn" class="history-btn" title="לך קדימה">&#8594;</button>
+    </div>
+    <header>
+        <img src="Michal & Lali (1).png" alt="לוגו" class="logo logo-move" />
+        <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+            <h1>כל הטיסות</h1>
+            <div id="filter-container">
+                <label for="destination-filter">סנן לפי יעד:</label>
+                <select id="destination-filter">
+                    <option value="all">הכל</option>
+                </select>
+            </div>
+        </div>
+        <button id="go-to-cart" onclick="location.href='cart.html'">סל הקניות </button>
+    </header>
+    <div id="products-container"></div>
+    <script>
+        document.getElementById('back-btn').onclick = function() {
+            history.back();
+        };
+        document.getElementById('forward-btn').onclick = function() {
+            history.forward();
+        };
+    </script>
+</body>
+</html>

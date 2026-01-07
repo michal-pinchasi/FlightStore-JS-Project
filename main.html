@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .history-buttons {
+            position: fixed;
+            top: 18px;
+            left: 18px;
+            z-index: 9999;
+            display: flex;
+            gap: 0.7rem;
+        }
+        .history-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #ffc226;
+            color: #fff;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.18);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .history-btn:hover {
+            background: #ffb800;
+            transform: scale(1.08);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+
+<body>
+    <div class="history-buttons">
+        <button id="back-btn" class="history-btn" title="חזור אחורה">&#8592;</button>
+        <button id="forward-btn" class="history-btn" title="לך קדימה">&#8594;</button>
+    </div>
+    <header>
+        <div id="header-actions">
+            <button id="go-to-cart" onclick="location.href='cart.html'">🛒 עבור לסל הקניות</button>
+            <div id="filter-container">
+                <label for="destination-filter">סנן לפי יעד:</label>
+                <select id="destination-filter">
+                    <option value="all">הכל</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <div id="products-container"></div>
+    <script src="dataModels.js"></script>
+    <script src="allProducts.js" defer></script>
+    <script>
+        document.getElementById('back-btn').onclick = function() {
+            history.back();
+        };
+        document.getElementById('forward-btn').onclick = function() {
+            history.forward();
+        };
+    </script>
+</body>
+</html>

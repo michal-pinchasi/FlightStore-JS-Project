@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>סל הקניות  - DigitStore</title>
+  <link rel="stylesheet" href="cart.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+    <div class="history-buttons">
+        <button id="back-btn" class="history-btn" title="חזור אחורה">&#8592;</button>
+        <button id="forward-btn" class="history-btn" title="לך קדימה">&#8594;</button>
+    </div>
+ <header>
+  <img src="Michal & Lali (1).png" alt="לוגו" class="logo logo-move" />
+  <h1>סל הקניות</h1>
+  <div></div> 
+</header>
+  <main>
+    <div id="cart-container"></div>
+    <div id="total-price">סה״כ: ₪0</div>
+    <button id="checkout-btn">לתשלום</button>
+
+    <div id="payment-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>סכום לתשלום</h2>
+        <p id="final-amount"></p>
+        <button id="finish-payment">סיום</button>
+      </div>
+    </div>
+  </main>
+    <script>
+        document.getElementById('back-btn').onclick = function() {
+            history.back();
+        };
+        document.getElementById('forward-btn').onclick = function() {
+            history.forward();
+        };
+    </script>
+</body>
+</html>
