@@ -1,14 +1,15 @@
 # SkyStore - Flight Booking System 
+מערכת מקיפה לניהול והזמנת טיסות, הכוללת ניהול משתמשים מלא וצד לקוח מתקדם המבוסס על Vanilla JavaScript.
 
-פלטפורמה דינמית להזמנת טיסות המבוססת על צד לקוח.
+##  סקירה פונקציונלית:
+* **מערכת אימות משתמשים (Authentication):** דפי הרשמה והתחברות פונקציונליים המנהלים את נתוני המשתמשים ב-`localStorage`.
+* **ניהול מוצרים דינמי:** שימוש ב-Web Components מותאמים אישית (`ProductCard`) להצגת הטיסות בצורה מודולרית.
+* **סל קניות אינטראקטיבי:** מערכת סל המאפשרת הוספה, עדכון כמויות וחישוב מחיר סופי בזמן אמת.
+* **סינון מתקדם:** אפשרות סינון מהיר של טיסות לפי יעדים.
+* **חוויית משתמש (UX/UI):** עיצוב רספונסיבי מלא, מודלים לאישור תשלום, וכפתורי ניווט היסטוריה מובנים.
 
-##  תכונות עיקריות
-* **תצוגת מוצרים דינמית:** שימוש ב-Custom Elements (`product-card`) להצגת הטיסות.
-* **סינון מתקדם:** אפשרות סינון טיסות לפי יעד בזמן אמת.
-* **סל קניות פונקציונלי:** הוספה, הסרה ועדכון כמויות של כרטיסי טיסה.
-* **שמירת נתונים:** שימוש ב-`localStorage` לשמירת פריטי הסל גם לאחר רענון הדף.
-
-##  טכנולוגיות
-* **HTML5 & CSS3:** עיצוב רספונסיבי ושימוש ב-Grid.
-* **Vanilla JavaScript:** ניהול לוגיקה ללא ספריות חיצוניות.
-* **Web Components:** יצירת רכיבים עצמאיים לשימוש חוזר.
+## 🛠 טכנולוגיות וכלים
+* **JavaScript (ES6+):** שימוש ב-Classes, פונקציות חץ, ו-Shadow DOM ליצירת קוד נקי ומודרני.
+* **Web Components:** יצירת רכיבים עצמאיים (Custom Elements) לשימוש חוזר בכל חלקי האתר.
+* **Data Persistence:** ניהול בסיס נתונים מקומי באמצעות `localStorage` לשמירת משתמשים ופריטים בסל.
+* **HTML5 & CSS3:** עיצוב מתקדם הכולל שימוש ב-Flexbox, Grid ו-Media Queries להתאמה לכל המכשירים.
