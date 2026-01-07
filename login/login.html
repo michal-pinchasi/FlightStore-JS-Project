@@ -1,0 +1,37 @@
+s<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כניסה</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="history-buttons">
+        <button id="back-btn" class="history-btn" title="חזור אחורה">&#8592;</button>
+        <button id="forward-btn" class="history-btn" title="לך קדימה">&#8594;</button>
+    </div>
+    <div class="login-container">
+        <h2>התחברות</h2>
+        <form class="login-form">
+            <label for="username">שם משתמש</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">סיסמה</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="login()">כניסה</button>
+        </form>
+        <p>אין לך משתמש? <a href="register/register.html">הרשמה</a></p>
+    </div>
+    <script src="login.js"></script>
+    <script>
+        document.getElementById('back-btn').onclick = function() {
+            history.back();
+        };
+        document.getElementById('forward-btn').onclick = function() {
+            history.forward();
+        };
+    </script>
+</body>
+</html>
