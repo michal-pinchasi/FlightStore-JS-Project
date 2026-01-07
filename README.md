@@ -8,7 +8,7 @@
 * **סינון מתקדם:** אפשרות סינון מהיר של טיסות לפי יעדים.
 * **חוויית משתמש (UX/UI):** עיצוב רספונסיבי מלא, מודלים לאישור תשלום, וכפתורי ניווט היסטוריה מובנים.
 
-## 🛠 טכנולוגיות וכלים
+## טכנולוגיות וכלים
 * **JavaScript (ES6+):** שימוש ב-Classes, פונקציות חץ, ו-Shadow DOM ליצירת קוד נקי ומודרני.
 * **Web Components:** יצירת רכיבים עצמאיים (Custom Elements) לשימוש חוזר בכל חלקי האתר.
 * **Data Persistence:** ניהול בסיס נתונים מקומי באמצעות `localStorage` לשמירת משתמשים ופריטים בסל.
